@@ -11,6 +11,18 @@ salaries = [100, 80, 75, 77, 89, 33, 45, 25, 65, 17, 30, 24, 57, 55, 70, 75, 65,
 # Среднее арифметическое
 mean_salary = sum(salaries) / len(salaries)
 
+# Смещенная и несмещенная оценки дисперсий и стандартное отклонение
+biased_variance = sum((x - mean_salary) ** 2 for x in salaries) / len(salaries)
+unbiased_variance = sum((x - mean_salary) ** 2 for x in salaries) / (len(salaries) - 1)
+std_deviation = unbiased_variance ** 0.5
+
+print(f"Среднее арифметическое: {mean_salary}")
+print(f"Смещенная оценка дисперсии: {biased_variance}")
+print(f"Несмещенная оценка дисперсии: {unbiased_variance}")
+print(f"Среднее квадратичное отклонение: {std_deviation}")
+
+
+
 
 
 
