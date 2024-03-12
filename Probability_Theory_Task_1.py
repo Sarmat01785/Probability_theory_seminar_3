@@ -20,12 +20,3 @@ print(f"Среднее арифметическое: {mean_salary}")
 print(f"Смещенная оценка дисперсии: {biased_variance}")
 print(f"Несмещенная оценка дисперсии: {unbiased_variance}")
 print(f"Среднее квадратичное отклонение: {std_deviation}")
-
-
-
-
-
-
-
-
-
